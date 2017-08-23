@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda online videojuegos">
+    <meta name="author" content="Proyecto Grupo 3">
+    <title>Hobbit Gam3s-Carrito</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" typ3="img/jpg" href="img/icono.png">
+    <link rel="stylesheet" href="css/view.css">
+    <<link rel="stylesheet" href="css/style.css">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Patrick+Hand+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Frijole|Shadows+Into+Light|Walter+Turncoat" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Hobbit Gam3s</a>
+                <img class="logo hidden-xs" src="img/logo.png" alt="">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <!-- /.navbar-collapse -->
+            <div class="collapse navbar-collapse menuright" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="login.html">Login
+                          <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Mi Cuenta
+                          <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="cart.html">
+                        Carrito
+                          <i class="fa fa-shopping-cart fa-2x"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+             <div class="col-md-3 col-sm-12 col-xs-12">
+                <p class="lead">Hobbit Gam3s</p>
+                <div class="list-group">
+                    <a href="#" alt="" title="" class="list-group-item">B&uacute;squeda</a>
+                    <form method="post" action="BusquedaServlet" id="formulario">
+                      <label for="busqueda">Buscar</label>
+                      <input title="Busqueda" alt="Campo busqueda videojuego"name="busqueda" id="busqueda" class="buscar col-md-10 col-xs-10" type="text"/>
+                        <button type="button" class="search-submit col-md-8 col-xs-10 botonBusca" alt="Busqueda" title="Buscar videojuego" value="Buscar">Buscar</button>
+            						<p class="avanzada">
+                          <a href="#" >Avanzada</a></br>
+            							<a href="contact.html" >Contacto</a>
+            						</p>
+                    </form>
+                </div>
+                <div class="list-group">
+                    <a href="CategoriaServlet?categoria=accion" alt="" title="Accion" class="list-group-item">Accion</a>
+                    <a href="CategoriaServlet?categoria=arcade"alt="" title="Arcade" class="list-group-item">Arcade</a>
+                    <a href="CategoriaServlet?categoria=aventura"alt="" title="Aventura Grafica" class="list-group-item">Aventura Grafica</a>
+                    <a href="CategoriaServlet?categoria=beatemup"alt="" title="Beat'em up" class="list-group-item">Beat'em up</a>
+                    <a href="CategoriaServlet?categoria=deportes"alt="" title="Deportes" class="list-group-item">Deportes</a>
+                    <a href="CategoriaServlet?categoria=estrategia"alt="" title="Estrategia" class="list-group-item">Estrategia</a>
+                    <a href="CategoriaServlet?categoria=lucha"  alt="" title="Lucha" class="list-group-item">Lucha</a>
+                    <a href="CategoriaServlet?categoria=puzzle" alt="" title="Puzzle" class="list-group-item">Puzzle</a>
+                    <a href="CategoriaServlet?categoria=retro" alt="" title="Retro" class="list-group-item">Retro</a>
+                    <a href="CategoriaServlet?categoria=shootemup" alt="" title="Shoot'em up" class="list-group-item">Shoot'em up</a>
+                    <a href="CategoriaServlet?categoria=survival" alt="" title="Survival" class="list-group-item">Survival</a>
+                    <a href="CategoriaServlet?categoria=terror" alt="" title="Terror" class="list-group-item">Terror</a>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-12 col-md-offset-1 cartContainer">
+                        <form action="" mehotd="post" id="presupuesto">
+                          <table class="table table-hover">
+                              <thead>
+                                  <tr>
+                                      <th>Producto</th>
+                                      <th>Cantidad</th>
+                                      <th class="text-center">Precio</th>
+                                      <th class="text-center">Total</th>
+                                      <th> </th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td class="col-sm-8 col-md-6">
+                                        <div class="media">
+                                          <a class="thumbnail pull-left" href="#"> <img class="media-object" src="./img/iconwow.jpg" style="width: 72px; height: 72px;"> </a>
+                                          <div class="media-body">
+                                              <h5 class="media-heading"> World of Warcraft <a href="#">Legion</a></h5>
+                                              <span>Estado: </span><span class="text-success"><strong>Stock</strong></span>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td class="col-sm-1 col-md-1" style="text-align: center">
+                                        <input type="number" class="form-control" id="cantidad">
+                                      </td>
+                                      <td class="col-sm-1 col-md-1 text-center">
+                                        <p id="precio" name="precio">4.88</p>
+                                      </td>
+                                      <p>
+                                        <td class="col-sm-1 col-md-1 text-center total" id="total" name="total"><strong>&euro;</strong></td>
+                                      </p>
+                                      <td class="col-sm-1 col-md-1">
+                                      <button type="button" class="btn btn-danger botonEliminar" id="elimina">
+                                          <span class="glyphicon glyphicon-remove"></span> Eliminar
+                                      </button></td>
+                                  </tr>
+                                  <tr>
+                                      <td class="col-sm-8 col-md-6">
+                                        <div class="media">
+                                          <a class="thumbnail pull-left" href="#"> <img class="media-object" src="./img/icondiablo.jpg" style="width: 72px; height: 72px;"> </a>
+                                          <div class="media-body">
+                                              <h5 class="media-heading"> Diablo <a href="#">III</a></h5>
+                                              <span>Estado: </span><span class="text-warning"><strong>2-3 d&iacute;as</strong></span>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td class="col-sm-1 col-md-1" style="text-align: center">
+                                        <input type="number" class="form-control" id="cantidad">
+                                      </td>
+                                      <td class="col-sm-1 col-md-1 text-center">
+                                        <p id="precio2" name="precio">12.88</p>
+                                      </td>
+                                      <p>
+                                        <td class="col-sm-1 col-md-1 text-center total" id="total" name="total"><strong>&euro;</strong></td>
+                                      </p>
+                                      <td class="col-sm-1 col-md-1">
+                                      <button type="button" class="btn btn-danger botonEliminar" id="elimina">
+                                          <span class="glyphicon glyphicon-remove"></span> Eliminar
+                                      </button></td>
+                                  </tr>
+                                  <tr>
+                                      <td class="col-sm-8 col-md-6">
+                                      <div class="media">
+                                          <a class="thumbnail pull-left" href="#"> <img class="media-object" src="./img/icongta.png" style="width: 72px; height: 72px;"> </a>
+                                          <div class="media-body">
+                                              <h5 class="media-heading"> Gta <a href="#">5</a></h5>
+                                              <span>Estado: </span><span class="text-success"><strong>Stock</strong></span>
+                                          </div>
+                                      </div></td>
+                                      <td class="col-sm-1 col-md-1" style="text-align: center">
+                                      <input type="email" class="form-control" id="exampleInputEmail">
+                                      </td>
+                                      <td class="col-sm-1 col-md-1 text-center"><strong>4.87&euro;</strong></td>
+                                      <td class="col-sm-1 col-md-1 text-center"><strong>14.61&euro;</strong></td>
+                                      <td class="col-sm-1 col-md-1">
+                                      <button type="button" class="btn btn-danger">
+                                          <span class="glyphicon glyphicon-remove"></span> Eliminar
+                                      </button></td>
+                                  </tr>
+                                  <tr>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td><h5>Subtotal</h5></td>
+                                      <td class="text-right"><h5><strong>24.59&euro;</strong></h5></td>
+                                  </tr>
+                                  <tr>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td><h5>Coste env&iacute;o</h5></td>
+                                      <td class="text-right"><h5><strong>6.94&euro;</strong></h5></td>
+                                  </tr>
+                                  <tr>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td><h3>Total</h3></td>
+                                      <td class="text-right"><h3><strong>31.53&euro;</strong></h3></td>
+                                  </tr>
+                                  <tr>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td>   </td>
+                                      <td>
+                                      <button type="button" class="btn btn-default">
+                                          <span class="glyphicon glyphicon-shopping-cart"></span> Continuar comprando
+                                      </button></td>
+                                      <td>
+                                      <button type="button" class="btn btn-success">
+                                          Checkout <span class="glyphicon glyphicon-play"></span>
+                                      </button></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </form>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row foot">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p class="footlet">
+          					<a href="index.html">Home</a>
+          					<span>|</span>
+          					<a href="#">Soporte</a>
+          					<span>|</span>
+          					<a href="profile.html">Mi Cuenta</a>
+          					<span>|</span>
+          					<a href="contact.html">Contacto</a>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+            					&copy; 2017 Hobbit Gam3s
+          				</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

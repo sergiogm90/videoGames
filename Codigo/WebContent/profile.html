@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda online videojuegos">
+    <meta name="author" content="Proyecto Grupo 3">
+    <title>Hobbit Gam3s</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" typ3="img/jpg" href="img/icono.png">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Patrick+Hand+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Frijole|Shadows+Into+Light|Walter+Turncoat" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hobbit Gam3s</a>
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <!-- /.navbar-collapse -->
+            <div class="collapse navbar-collapse menuright" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav rightNav">
+
+                    <li>
+                        <a href="login.html">Login
+                          <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Mi Cuenta
+                          <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="cart.html">
+                        Carrito
+                          <i class="fa fa-shopping-cart fa-2x"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12">
+              <p class="lead">Hobbit Gam3s</p>
+              <div class="list-group">
+                  <a href="#" alt="" title="" class="list-group-item">B&uacute;squeda</a>
+                  <form method="post" action="BusquedaServlet" id="formulario">
+                    <label for="busqueda">Buscar</label>
+                    <input title="Busqueda" alt="Campo busqueda videojuego"name="busqueda" id="busqueda" class="buscar col-md-10 col-xs-10" type="text"/>
+                      <button type="button" class="search-submit col-md-8 col-xs-10 botonBusca" alt="Busqueda" title="Buscar videojuego" value="Buscar">Buscar</button>
+                      <p class="avanzada">
+                        <a href="#" >Avanzada</a></br>
+                        <a href="contact.html" >Contacto</a>
+                      </p>
+                  </form>
+              </div>
+              <div class="list-group">
+                  <a href="CategoriaServlet?categoria=accion" alt="" title="Accion" class="list-group-item">Accion</a>
+                  <a href="CategoriaServlet?categoria=arcade"alt="" title="Arcade" class="list-group-item">Arcade</a>
+                  <a href="CategoriaServlet?categoria=aventura"alt="" title="Aventura Grafica" class="list-group-item">Aventura Grafica</a>
+                  <a href="CategoriaServlet?categoria=beatemup"alt="" title="Beat'em up" class="list-group-item">Beat'em up</a>
+                  <a href="CategoriaServlet?categoria=deportes"alt="" title="Deportes" class="list-group-item">Deportes</a>
+                  <a href="CategoriaServlet?categoria=estrategia"alt="" title="Estrategia" class="list-group-item">Estrategia</a>
+                  <a href="CategoriaServlet?categoria=lucha"  alt="" title="Lucha" class="list-group-item">Lucha</a>
+                  <a href="CategoriaServlet?categoria=puzzle" alt="" title="Puzzle" class="list-group-item">Puzzle</a>
+                  <a href="CategoriaServlet?categoria=retro" alt="" title="Retro" class="list-group-item">Retro</a>
+                  <a href="CategoriaServlet?categoria=shootemup" alt="" title="Shoot'em up" class="list-group-item">Shoot'em up</a>
+                  <a href="CategoriaServlet?categoria=survival" alt="" title="Survival" class="list-group-item">Survival</a>
+                  <a href="CategoriaServlet?categoria=terror" alt="" title="Terror" class="list-group-item">Terror</a>
+              </div>
+          </div>
+
+
+          <div class="container">
+        <hr>
+<div class="container" style="padding-top: 60px;">
+    <div> <img src="img/cabecera.jpg" class="foto-cabecera"> </div>
+
+ <div class= "col-md-9 usuario-completo">
+  <h1 class="page-header">Perfil usuario</h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+       <img src=".\img\photouser.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
+      </div>
+    </div>
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+     <div class= "cabecera">
+      <div class="alert alert-info alert-dismissable">
+        <a class="panel-close close" data-dismiss="alert">×</a>
+        <i class="fa fa-coffee"></i>
+        This is an <strong>.alert</strong>. Use this to show important messages to the user.
+      </div>
+        </div>
+      <h3>Datos personales</h3>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Nombre:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="Facunda" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Apellidos:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="Filopondia Jesucrista" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="facufilojesu@gmail.com" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Usuario:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="fafije" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="1234567" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Confirma contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="1234567" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" value="Guardar" type="button">
+            <span></span>
+            <input class="btn btn-default" value="Cancelar" type="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <!-- /.container -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row foot">
+                <div class="col-lg-12">
+                  <p class="footlet">
+          					<a href="indey76x.html">Home</a>
+          					<span>|</span>
+          					<a href="#">Soporte</a>
+          					<span>|</span>
+          					<a href="profile.html">Mi Cuenta</a>
+          					<span>|</span>
+          					<a href="contact.html">Contacto</a>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+            					&copy; 2017 Hobbit Gam3s
+            					Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+          				</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

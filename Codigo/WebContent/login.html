@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda online videojuegos">
+    <meta name="author" content="Proyecto Grupo 3">
+    <title>Hobbit Gam3s</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" typ3="img/jpg" href="img/icono.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container colorNav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="CategoriaServlet">Hobbit Gam3s</a>
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <!-- /.navbar-collapse -->
+            <div class="collapse navbar-collapse menuright" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="login.html">Login
+                          <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Mi Cuenta
+                          <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="cart.html">
+                        Carrito
+                          <i class="fa fa-shopping-cart fa-2x"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12">
+              <p class="lead">Hobbit Gam3s</p>
+              <div class="list-group">
+                  <a href="#" alt="" title="" class="list-group-item">B&uacute;squeda</a>
+                  <form method="post" action="BusquedaServlet" id="formulario">
+                    <label for="busqueda">Buscar</label>
+                    <input title="Busqueda" alt="Campo busqueda videojuego"name="busqueda" id="busqueda" class="buscar col-md-10 col-xs-10" type="text"/>
+                      <button type="button" class="search-submit col-md-8 col-xs-10 botonBusca" alt="Busqueda" title="Buscar videojuego" value="Buscar">Buscar</button>
+                      <p class="avanzada">
+                        <a href="#" >Avanzada</a></br>
+                        <a href="contact.html" >Contacto</a>
+                      </p>
+                  </form>
+              </div>
+              <div class="list-group">
+                  <a href="CategoriaServlet?categoria=accion" alt="" title="Accion" class="list-group-item">Accion</a>
+                  <a href="CategoriaServlet?categoria=arcade"alt="" title="Arcade" class="list-group-item">Arcade</a>
+                  <a href="CategoriaServlet?categoria=aventura"alt="" title="Aventura Grafica" class="list-group-item">Aventura Grafica</a>
+                  <a href="CategoriaServlet?categoria=beatemup"alt="" title="Beat'em up" class="list-group-item">Beat'em up</a>
+                  <a href="CategoriaServlet?categoria=deportes"alt="" title="Deportes" class="list-group-item">Deportes</a>
+                  <a href="CategoriaServlet?categoria=estrategia"alt="" title="Estrategia" class="list-group-item">Estrategia</a>
+                  <a href="CategoriaServlet?categoria=lucha"  alt="" title="Lucha" class="list-group-item">Lucha</a>
+                  <a href="CategoriaServlet?categoria=puzzle" alt="" title="Puzzle" class="list-group-item">Puzzle</a>
+                  <a href="CategoriaServlet?categoria=retro" alt="" title="Retro" class="list-group-item">Retro</a>
+                  <a href="CategoriaServlet?categoria=shootemup" alt="" title="Shoot'em up" class="list-group-item">Shoot'em up</a>
+                  <a href="CategoriaServlet?categoria=survival" alt="" title="Survival" class="list-group-item">Survival</a>
+                  <a href="CategoriaServlet?categoria=terror" alt="" title="Terror" class="list-group-item">Terror</a>
+              </div>
+          </div>
+            <div class="col-md-9" "col-sm-12">
+               <div class="container">
+    	<div class="row">
+    	<div class="col-md-6 hidden-sm hidden-xs">
+            <img  id="imglog" src="img/login.jpg">
+        </div>
+			<div class="col-md-6 col-md-offset-2">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Registrarse</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+
+							<div class="col-lg-12">
+								<form id="login-form" action="LoginServlet" method="post" role="form" style="display: block;">
+									<div class="form-group">
+										<input type="text" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraeña">
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Recordar </label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="ENTRAR">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<a href="#" tabindex="5" class="forgot-password">¿Olvidaste la contraseña?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<form id="register-form" action="#" method="post" role="form" style="display: none;">
+									<div class="form-group">
+										<input type="text" name="nombre" id="nombre" tabindex="1" class="form-control" placeholder="Nombre" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="apellido" id="apellido" tabindex="1" class="form-control" placeholder="Apellidos" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmar contraseña">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="ENVIAR">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row foot">
+                <div class="col-lg-12">
+                  <p class="footlet">
+          					<a href="#">Home</a>
+          					<span>|</span>
+          					<a href="#">Soporte</a>
+          					<span>|</span>
+          					<a href="#">Mi Cuenta</a>
+          					<span>|</span>
+          					<a href="#">Contacto</a>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+            					&copy; 2017 Hobbit Gam3s
+            					Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+          				</p>
+
+          			</foot>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+<script src="js/login.js"></script>
+</html>
